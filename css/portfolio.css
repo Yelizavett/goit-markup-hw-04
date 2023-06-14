@@ -1,0 +1,263 @@
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2e2f42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle-text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --white-background: #FFFFFF;
+    --modal-background: #FCFCFC;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #E5E5E5;
+    color: var(--text);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+list-style: none
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/**-------------------------- Header ------------------------*/
+
+.flex-list {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+
+.flex-address {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+
+.header {
+background: var(--white-background);
+border-bottom: 1px solid var(--accent);
+display: flex;
+flex-direction: row;
+}
+
+.logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-brand);
+margin-right: 76px;
+}
+
+.logo-header {
+color: var(--dark);
+}
+
+.navigation-list {
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--dark);
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.address {
+font-style: normal;
+margin-left: auto;
+}
+
+.contacts {
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text);
+}
+
+.navigation-list:hover {
+color: var(--pressed-state);
+}
+
+.contacts:hover {
+color: var(--pressed-state);
+}
+
+.navigation-list:focus {
+color: var(--pressed-state);
+}
+
+.contacts:focus {
+color: var(--pressed-state);
+}
+/**---------------------------- Filter -------------------------*/
+
+.flex-filter { display: flex;
+gap: 24px; 
+justify-content: center;
+margin-bottom: 72px;
+
+}
+
+.section-projects {
+    background-color: var(--white-background);
+    padding-top: 72px;
+    padding-bottom: 96px;
+
+}
+
+.filter-button {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.04em;
+color: var(--primary-brand);
+background: var(--light);
+border: 1px solid var(--accent);
+border-radius: 4px;
+cursor: pointer;
+padding: 12px 24px;
+min-width: 69px;
+white-space: nowrap;
+}
+
+.filter-button:hover {
+    background: var(--pressed-state);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--white-background);
+    border: 1px solid transparent;
+}
+
+.filter-button:focus {
+    background: var(--pressed-state);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--white-background);
+    border: 1px solid transparent
+}
+
+/**--------------------------- Projects ---------------------------------*/
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 24px;
+    justify-content: center;
+    background-color: var(--white-background);
+    row-gap: 48px;
+}
+
+.project-item { width: calc((100% - 48px) / 3) }
+
+.project-box { padding: 32px 16px;
+border: 1px solid var(--accent);
+border-top: none;
+margin-bottom: 8px; }
+
+.projects-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.projects-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+
+/**--------------------- footer -----------------------------*/
+
+.footer {
+    background-color: var(--dark);
+}
+
+.container-footer {
+    width: 1158px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    background-color: var(--dark);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand);
+}
+
+.logo-studio {
+    color: var(--light);
+}
+
+.footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--light);
+    padding-top: 16px;
+    max-width: 264px;
+}
